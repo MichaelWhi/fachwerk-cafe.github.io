@@ -21,10 +21,16 @@ body {
   background-color: #0A2408;
   text-align: center;
   margin: 5px 10px;
+  font-family: Garamond, Georgia, Times, "Times New Roman", serif;
+}
+address {
+  font-size: 120%;
 }
 
 img.logo {
   max-width: 80%;
+  margin-top: -50px;
+  margin-bottom: -50px;
 }
 
 .socialmedia img {
@@ -215,6 +221,8 @@ textarea {
   img.logo {
     object-fit: none;
     max-height: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
