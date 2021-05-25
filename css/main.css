@@ -226,6 +226,47 @@ textarea {
   }
 }
 
+@media only screen and (max-height: 700px) {
+  .large-height-inline {
+    display: none;
+  }
+}
+
+
+.tiny-height-inline {
+  display: inline-block;
+  transform-origin: bottom;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  font-size: 150%;
+  margin-left: 0.4vw;
+}
+.bounce1 {
+  animation-name: bounce1;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+@keyframes bounce1 {
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-60px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-7px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
+}
+
+@media only screen and (min-height: 450px) {
+  .tiny-height-inline {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .tiny-height-inline {
+    display: none;
+  }
+}
+
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
